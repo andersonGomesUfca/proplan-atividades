@@ -1,2 +1,25 @@
 eu tenho medição de chuva feita com um aparelho no chão no lugar A e a medição no mesmo lugar com satélite
 quão diferentes são?
+
+----
+R10_CHiRPS_id1.csv,
+R10_ERA5_id1.csv,
+R10_PERSIANN-CDR_id1.csv,
+  contem medições de chuva coletada por satélite
+
+R10_ReferenceDate_id1.csv
+  contem medições de chuva coletada no solo
+---
+erro_modulo.txt
+  contem as médias de erros em modulos, comparando todas as 6 combinações 2 a dois dos satelites e/ou medição do solo, por ano e uma linha final sumarizando tudo.
+
+erro_quadratico.txt
+  contem as médias de erros quadraticos, comparando todas as 6 combinações 2 a dois dos satelites e/ou medição do solo, por ano e uma linha final sumarizando tudo.
+
+teste_t.txt
+  contem os p-values (hipotese nula os dois grupos são iguais) dos testes t pareado,
+  comparando todas as 6 combinações 2 a dois dos satelites e/ou medição do solo, por ano e uma linha final sumarizando tudo.
+  quanto mais próximo o p-value de 0, mais evidências temos de que os dois grupos são realmente diferentes.
+---
+
+Obs: temos que pesquisar melhor se o teste t pareado é o mais adequado para esse caso.
